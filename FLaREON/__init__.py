@@ -662,7 +662,7 @@ def pre_treatment_f_esc( Geometry , V_Arr , logNH_Arr , ta_Arr , Inside_Bicone_A
     #V_Arr_used[ bool4 ] = 100.00001
 
     #============================================#
-    if Geometry in [ 'Thin_Shell' , 'Bicone_X_Slab' ] :
+    if Geometry in [ 'Bicone_X_Slab' ] :
         bool1 = V_Arr_used < 100.0
         bool2 = logNH_Arr_used >= 20.5
     
@@ -973,7 +973,7 @@ def pre_treatment_Line_profile_MCMC( Geometry , V_Value , logNH_Value , ta_Value
 
     Bool_good = bool1 * bool2 * bool3
 
-    if Geometry in [ 'Thin_Shell' , 'Bicone_X_Slab' ]:
+    if Geometry in [ 'Bicone_X_Slab' ]:
         if V_Value <= 100.0 and logNH_Value >= 20.5 :
 
             #aux_V = logNH_Value*-40 + 920.
@@ -1233,9 +1233,16 @@ def Print_the_grid_edges():
     print ''
     print '    V_exp [ km/s ] = [ 0 , 10 , ... , 90 , 100 , 150 , 200 , ... , 950 , 1000 ]'
     print ''
-    print '    For V_exp <  100 km/s the logNH [ cm**-2 ] = [ 17.0 , 17.25 , ... , 20.25 , 20.5 ]'
+    print '    Bicone_X_Slab :'
+    print ''
+    print '         For V_exp <  100 km/s the logNH [ cm**-2 ] = [ 17.0 , 17.25 , ... , 20.25 , 20.5 ]'
     print '    '
-    print '    For V_exp >= 100 km/s the logNH [ cm**-2 ] = [ 17.0 , 17.25 , ... , 21.75 , 22.0 ]'
+    print '         For V_exp >= 100 km/s the logNH [ cm**-2 ] = [ 17.0 , 17.25 , ... , 21.75 , 22.0 ]'
+    print ''
+    print '    Thin_Shell and Galactic_Wind :'
+    print ''
+    print '         logNH [ cm**-2 ] = [ 17.0 , 17.25 , ... , 21.75 , 22.0 ]'
+    print ''
     print '    '
     print '    For the escape fraction : tau_a = [ -3. , -2. , -1.5 , -1.0 , -0.75 , -0.5 , -0.25 , -0.0 ]'
     print '    '
