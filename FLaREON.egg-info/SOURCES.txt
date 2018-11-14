@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+FLaREON/__init__.py
+FLaREON.egg-info/PKG-INFO
+FLaREON.egg-info/SOURCES.txt
+FLaREON.egg-info/dependency_links.txt
+FLaREON.egg-info/requires.txt
+FLaREON.egg-info/top_level.txt
+FLaREON/DATA/List_of_DATA_files

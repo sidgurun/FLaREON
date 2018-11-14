@@ -6,7 +6,13 @@ Lyman alpha Resonant Scatter is dominated by random processes.
 
 Although there is chaos, there is also an order.
 
-## WARNING : THIS IS BETA VERSION! BUGS EVERYWHERE, BE AWARE!
+## Authors
+
+Siddhartha Gurung Lopez
+
+Alvaro Orsi
+
+Silvia Bonoli
 
 ## Origins and motivation
 
