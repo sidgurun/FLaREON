@@ -151,7 +151,7 @@ f_esc_Arr = Lya.RT_f_esc( Geometry , V_Arr , logNH_Arr , ta_Arr , MODE=MODE )
 Finally, any combination of `MODE` , `Algorithm` and `Machine_Learning_Algorithm` is allowed. However, note that the variable `Machine_Learning_Algorithm` is useless if `Algorithm='Intrepolation'`.
 
 
-### Predicting thousands of Lyman alpha escape fractions.
+### Predicting thousands of Lyman alpha Line profiles.
 
 In this section we explain how to obtain in a fast way an arbitray number of Lyman alpha line porfiles. The syntax is very similar to the one of escape fraction functions. The main difference is that the user must provide a wavelength array (in meters) where the line profile will be evaluated. The line profile of a thin shell outfow with expansion velocity (V) 200 km/s, logarithmic of column density (logNH) of 19.5 and dust optical depth (ta) of 0.1 in 20 amstrongs arround Lyman alpha can be computed as
 
