@@ -190,3 +190,40 @@ The other geometries (`'Galactic_Wind'` or `'Bicone_X_Slab'`) are also implement
 
 In opposite to escape fraction calculations, the line profile only supports by now linear interpolation between the pre-computed grids. Machine learning or deep learning might be implement in a future.
 
+
+### A powerfull aliance :  Joining FLaREON and emcee.
+
+`emcee` (http://dfm.io/emcee/current/) is a popular `python` package including tool to perform MCMC analysis. 
+
+In the folder `EXAMPLE_MCMC/` we include a basic examplem of how to wrap up `emcee` and `FLaREON`.
+
+`MCMC_fitter.py` is a script that generate a problem line profile and run an MCMC analysis to determine the ( column density - expansion velocty - dust optical depth ) combination that best reproduces the problem line profile. You can find a highly detailed explanation of the how the code works within it. 
+
+`MCMC_fitter.py` saves a file with all the MCMC information and name it acordingly to the MCMC configuration used.
+
+`Analize_mcmc.py` is another script to extract information from the saved file. You can set the MCMC parameters inside the code or you might just pass as an argument the name of the saved file:
+
+```python
+ipython Analize_mcmc.py mcmc_output_Galactic_Wind_None_ndim_3_nsteps_1000_nwalkers_100.txt
+```
+
+where the `mcmc_output_Galactic...txt` is the files saved by `MCMC_fitter.py`. 
+
+In this particular case, `Analize_mcmc.py` prints:
+
+```python
+if the ouflow geometry is Galactic_Wind, then, the best fitting values are...:
+    V_exp         =  62.4315
+    V_exp_err_top =  0.0
+    V_exp_err_bot =  0.0
+    logNH         =  17.14153
+    logNH_err_top =  0.0
+    logNH_err_bot =  0.0
+    logta         =  -0.250951
+    logta_err_top =  0.0
+    logta_err_bot =  0.0
+```
+
+where `V_exp` , `logNH` and `logta` are the best fitting expansion velocity, logarithm of column density and logarithm of dust optical depth for the line profile produced inside `MCMC_fitter.py` .
+
+We remark that this is just a simple script to ilustrate how to make a efficient wrap up in `emcee`. Users should develope their own codes to obtain better results on their individual estudies. However, we hope that the structure of `MCMC_fitter.py` can help users. 
