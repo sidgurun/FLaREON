@@ -14,6 +14,13 @@ Alvaro Orsi
 
 Silvia Bonoli
 
+
+## Publication links:
+
+ADS : 
+
+arXiv : 
+
 ## Origins and motivation
 
 Due to the Lyman alpha Radiative Transfer large complexity, the efforts of understanding it moved from pure analytic studies to the so-called radiative transfer Monte Carlo (RTMC) codes that simulate Lyman alpha photons in arbitrary gas geometries. These codes provide useful information about the fraction of photons that manage to escape and the resulting Lyman alpha line profiles. The RTMC approach has shown to reproduce the observed properties of LAEs.
