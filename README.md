@@ -17,9 +17,9 @@ Silvia Bonoli
 
 ## Publication links:
 
-ADS : 
+ADS : http://adsabs.harvard.edu/abs/2018arXiv181109630G
 
-arXiv : 
+arXiv : https://arxiv.org/abs/1811.09630
 
 ## Origins and motivation
 
@@ -136,7 +136,7 @@ Inside_Bicone_Arr = np.random.rand( len(V_Arr) ) < Area_in_bicone
 f_esc_Arr = Lya.RT_f_esc( Geometry , V_Arr , logNH_Arr , ta_Arr , Inside_Bicone_Arr=Inside_Bicone_Arr ) 
 ```  
 
-#### Deeper options on predicting the escape fraction (Unuseful section?).
+#### Deeper options on predicting the escape fraction .
 
 There are many algorithims implemented to compute `f_esc_Arr`. By default `FLaREON` uses a machine learning decision tree regressor and a parametric equation for the escape fraction as function of the dust optical depth (Go to the `FLaREON` presentation paper Gurung-Lopez et al. in prep for more information). These settings were chosen as default since they give the best performance. However the user might want to change the computing algorithm so here leave a guide with all the available options.
 
