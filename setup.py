@@ -29,7 +29,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="FLaREON",
-    version="0.0.5",
+    version="1.0.00",
     author="Siddhartha Gurung Lopez",
     author_email="sidgurung@cefca.es",
     description="Fast Lyman alpha Radiative Transfer for everyone!",
@@ -37,7 +37,8 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/sidgurun/LyaRT-Grid",
     packages=setuptools.find_packages(),
-    install_requires=[ 'sklearn' ],
+    #install_requires=[ 'sklearn>=20.0' ],
+    install_requires=[ 'scikit-learn>=0.20.0' ],
     include_package_data = True,
     classifiers=(
         "Programming Language :: Python :: 3",

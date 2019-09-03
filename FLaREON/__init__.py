@@ -476,7 +476,7 @@ def load_Grid_fesc( Geometry , MODE , INSIDE_BICONE=True ):
 
     filename = os.path.join(this_dir, filename)
 
-    loaded_model = np.load( filename ).item()
+    loaded_model = np.load( filename , allow_pickle=True ).item()
 
     return loaded_model
 #====================================================================#
@@ -905,7 +905,7 @@ def load_Grid_Line( Geometry , INSIDE_BICONE=None ):
 
     filename = os.path.join(this_dir, filename)
 
-    loaded_model = np.load( filename ).item()
+    loaded_model = np.load( filename , allow_pickle=True ).item()
 
     return loaded_model
 #====================================================================#
